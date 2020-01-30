@@ -1,0 +1,8 @@
+@charset "utf-8";
+#wrap{width: 100%;position: relative;background: #ef7c2b;}
+#wrap #header_le{display: flex;justify-content: left;}
+#wrap #header_le>li{background: black;width:25px;height:25px; border-radius: 50%;margin: 10px;color:white;text-align: center;font-family: 'Noto Sans KR', sans-serif;cursor: pointer;}
+#wrap>section>div{text-align:center;position: absolute;left: 50%; top:50%;transform: translate(-50%,-50%);}
+#wrap>section>div>a>img{width:75%;transition: 0.5s;}
+#wrap>section>div>p{ color: white;font-family: 'Big Shoulders Display', cursive;font-size: 16px;}
+#wrap>section>div>a>img:hover{width:100%;transition: 0.5s;}

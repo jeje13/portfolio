@@ -1,0 +1,31 @@
+@chrset "utf-8";
+*{
+padding: 0;
+margin: 0 auto;
+box-sizing: border-box;
+/* 포인트폰트
+
+/* 영문 */
+/* font-family: 'Big Shoulders Display', cursive; */
+
+/* 기본폰트 */
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Serif', serif; /* /명조 */
+font-family: 'Noto Serif KR', serif; /* /명조 */
+/* 흘림 */ 
+/* font-family: 'Handlee', cursive; */
+}
+
+body,header,section,nav,aside,footer,address,div,span,img,p,h1,h2,h3,h4,h5,
+h6,ul,li,ol,dl,dt,dd,a,figure,figcaption{margin: 0;padding: 0;border: none;box-sizing: border-box;}
+form,button,input,select,option{margin: 0;padding: 0;box-sizing: border-box;}
+a,a:hover{color: #333;}
+a,address{text-decoration: none;}
+ul,li,ol{list-style: none;}
+div,p,span,li,h1,h2,h3,h4,h5,h6,address,button,label,select,option{
+   font-size: 13px;color: #333;line-height: 1.8em;font-weight: 400;
+}
+@font-face { font-family: 'Chosunilbo_myungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.clearfix::after{display: block;content: "";clear: both;}
