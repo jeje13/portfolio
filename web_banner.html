@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>NAHYUNJEONG</title>
+        <!-- ==파비콘== -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+        <!-- ==폰트== -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,300,400,500,600,700,800,900|Handlee|Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans:400,400i,700,700i|Noto+Serif+KR:200,300,400,500,600,700,900|Noto+Serif:400,400i,700,700i&display=swap&subset=korean"
+            rel="stylesheet">
+
+        <!-- ==CSS== -->
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/web.css">
+
+        <!-- ==스크립트== -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
+        <style>
+            #box_size {
+                width: 48%;
+                height: 300px;
+                overflow: hidden;
+            }
+            #box_size > img {
+                width: 100%;
+            }
+        </style>
+        <script>
+            $(function () {
+                $('.slider').bxSlider();
+
+                $('#container01').hide();
+                $('#img_01').on('click', function () {
+                    $('#wrap').css('opacity', '0.5');
+                    $('#container01').show();
+                });
+                $('.close').on('click', function () {
+                    $('#wrap').css('opacity', '1');
+                    $('#container01').hide();
+                });
+
+            });
+        </script>
+
+    </head>
+    <body>
+
+        <div id="wrap">
+            <div id="hd_tit">
+                <a href="#back">
+                    <h2>banner design</h2>
+                </a>
+            </div>
+            <div id="sec_02">
+                <h3 class="title">월 배너 디자인</h3>
+                <div class="slider">
+                    <div><img src="images/w_banner/w_banner_01.jpg" alt="01"></div>
+                    <div><img src="images/w_banner/w_banner_02.jpg" alt="02"></div>
+                    <div><img src="images/w_banner/w_banner_03.jpg" alt="03"></div>
+                    <div><img src="images/w_banner/w_banner_04.jpg" alt="04"></div>
+                    <div><img src="images/w_banner/w_banner_05.jpg" alt="05"></div>
+                    <div><img src="images/w_banner/w_banner_06.jpg" alt="06"></div>
+                    <div><img src="images/w_banner/w_banner_07.jpg" alt="07"></div>
+                    <div><img src="images/w_banner/w_banner_08.jpg" alt="08"></div>
+                </div>
+                <div id="sec_0000">
+                    <h3 class="title">배너 디자인</h3>
+
+                    <div class="img box_size">
+                        <div id="box_size"><img id="img_01" src="images/img_01.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_03" src="images/img_03.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_04" src="images/img_04.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_05" src="images/img_05.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_06" src="images/img_06.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_07" src="images/img_07.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_08" src="images/img_08.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_09" src="images/img_09.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_10" src="images/img_10.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_11" src="images/img_11.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_12" src="images/img_12.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_13" src="images/img_13.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_14" src="images/img_14.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_15" src="images/img_15.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_16" src="images/img_16.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_17" src="images/img_17.jpg" alt="00"></div>
+                    </div>
+                </div>
+                <a href="index_main.html">
+                    <div id="back">BACK</div>
+                </a>
+            </div>
+
+            <div class="container" id="container01">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_01.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container03">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_03.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container04">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_04.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container05">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_05.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container06">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_06.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container07">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_07.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container08">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_08.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container09">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_09.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container10">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_10.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container11">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_11.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container12">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_12.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container13">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_13.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container14">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_14.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container15">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_15.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container16">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_16.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+            <div class="container" id="container17">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_17.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
+
+        </body>
+    </html>
