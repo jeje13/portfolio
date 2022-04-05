@@ -200,6 +200,15 @@
                     $('#wrap').css('opacity', '1');
                     $('#container17').hide();
                 });
+                 $('#container18').hide();
+                $('#img_18').on('click', function () {
+                    $('#wrap').css('opacity', '0.5');
+                    $('#container18').show();
+                });
+                $('.close').on('click', function () {
+                    $('#wrap').css('opacity', '1');
+                    $('#container18').hide();
+                });
 // 모달위치이동 스크립트
     var moDal01 = $('div#container01');
     var moDal03 = $('div#container03');
@@ -217,6 +226,7 @@
     var moDal15 = $('div#container15');
     var moDal16 = $('div#container16');
     var moDal17 = $('div#container17');
+    var moDal18 = $('div#container18');
 
     var winScroll = $(window).scroll(function () {
        
@@ -236,6 +246,7 @@
     var moDalHei = moDal15.css({"top":(($(window).height()-moDal15.outerHeight())/2+$(window).scrollTop())+"px","left":(($(window).width()-moDal15.outerWidth())/2+$(window).scrollLeft())+"px"});
     var moDalHei = moDal16.css({"top":(($(window).height()-moDal16.outerHeight())/2+$(window).scrollTop())+"px","left":(($(window).width()-moDal16.outerWidth())/2+$(window).scrollLeft())+"px"});
     var moDalHei = moDal17.css({"top":(($(window).height()-moDal17.outerHeight())/2+$(window).scrollTop())+"px","left":(($(window).width()-moDal17.outerWidth())/2+$(window).scrollLeft())+"px"});
+    var moDalHei = moDal18.css({"top":(($(window).height()-moDal18.outerHeight())/2+$(window).scrollTop())+"px","left":(($(window).width()-moDal18.outerWidth())/2+$(window).scrollLeft())+"px"});
     }); 
 
             });
@@ -283,6 +294,7 @@
                         <div id="box_size"><img id="img_15" src="images/img_15.jpg" alt="00"></div>
                         <div id="box_size"><img id="img_16" src="images/img_16.jpg" alt="00"></div>
                         <div id="box_size"><img id="img_17" src="images/img_17.jpg" alt="00"></div>
+                        <div id="box_size"><img id="img_18" src="images/img_18.jpg" alt="00"></div>
                     </div>
                 </div>
                 <a href="index_main.html">
@@ -435,6 +447,14 @@
                         title="클릭시 창이 닫힙니다.">
                 </div>
             </div>
-
+ <div class="container" id="container18">
+                <div class="modal">
+                    <img
+                        class="close"
+                        src="images/img_18.jpg"
+                        alt="상세 클릭시 닫힘"
+                        title="클릭시 창이 닫힙니다.">
+                </div>
+            </div>
         </body>
     </html>
