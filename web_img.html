@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAHYUNJEONG</title>
+    <!-- ==파비콘== -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+    <!-- ==폰트== -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,300,400,500,600,700,800,900|Handlee|Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans:400,400i,700,700i|Noto+Serif+KR:200,300,400,500,600,700,900|Noto+Serif:400,400i,700,700i&display=swap&subset=korean"
+        rel="stylesheet">
+
+    <!-- ==CSS== -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/web.css">
+
+    <!-- ==스크립트== -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <style>
+        .out_box {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        #box_size {
+            width: 48%;
+            height: 500px;
+            overflow: hidden;
+            display: inline-block;
+
+        }
+
+        #box_size>img {
+            width: 100%;
+        }
+
+        .container {
+            height: 720px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('.slider').bxSlider();
+
+            $('#container01').hide();
+            $('#img_01').on('click', function () {
+                $('#wrap').css('opacity', '0.5');
+                $('#container01').show();
+            });
+            $('.close').on('click', function () {
+                $('#wrap').css('opacity', '1');
+                $('#container01').hide();
+            });
+            $('#container02').hide();
+            $('#img_02').on('click', function () {
+                $('#wrap').css('opacity', '0.5');
+                $('#container01').show();
+            });
+            $('.close').on('click', function () {
+                $('#wrap').css('opacity', '1');
+                $('#container02').hide();
+            });
+            $('#container03').hide();
+            $('#img_03').on('click', function () {
+                $('#wrap').css('opacity', '0.5');
+                $('#container03').show();
+            });
+            $('.close').on('click', function () {
+                $('#wrap').css('opacity', '1');
+                $('#container03').hide();
+            });
+            $('#container04').hide();
+            $('#img_04').on('click', function () {
+                $('#wrap').css('opacity', '0.5');
+                $('#container03').show();
+            });
+            $('.close').on('click', function () {
+                $('#wrap').css('opacity', '1');
+                $('#container04').hide();
+            });
+            // 모달위치이동 스크립트
+            var moDal01 = $('div#container01');
+
+
+            var winScroll = $(window).scroll(function () {
+
+                var moDalHei = moDal01.css({ "top": (($(window).height() - moDal01.outerHeight()) / 2 + $(window).scrollTop()) + "px", "left": (($(window).width() - moDal01.outerWidth()) / 2 + $(window).scrollLeft()) + "px" });
+                var moDalHei = moDal02.css({ "top": (($(window).height() - moDal02.outerHeight()) / 2 + $(window).scrollTop()) + "px", "left": (($(window).width() - moDal02.outerWidth()) / 2 + $(window).scrollLeft()) + "px" });
+                var moDalHei = moDal03.css({ "top": (($(window).height() - moDal03.outerHeight()) / 2 + $(window).scrollTop()) + "px", "left": (($(window).width() - moDal03.outerWidth()) / 2 + $(window).scrollLeft()) + "px" });
+                var moDalHei = moDal04.css({ "top": (($(window).height() - moDal04.outerHeight()) / 2 + $(window).scrollTop()) + "px", "left": (($(window).width() - moDal04.outerWidth()) / 2 + $(window).scrollLeft()) + "px" });
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div id="hd_tit">
+            <a href="#back">
+                <h2>web design</h2>
+            </a>
+        </div>
+        <div id="sec_02">
+            <div id="sec_0000">
+                <h3 class="title">상세페이지 디자인</h3>
+
+                <div class="img out_box">
+                    <div id="box_size"><img id="img_01" src="images/01_img.jpg" alt="00"></div>
+                    <div id="box_size"><img id="img_01" src="images/02_img.jpg" alt="00"></div>
+                    <div id="box_size"><img id="img_01" src="images/03_img.jpg" alt="00"></div>
+                    <div id="box_size"><img id="img_01" src="images/04_img.jpg" alt="00"></div>
+                </div>
+            </div>
+            <a href="index_main.html">
+                <div id="back">BACK</div>
+            </a>
+        </div>
+
+    </div>
+    <div class="container" id="container01">
+        <div class="modal">
+            <img class="close" src="images/img_01.jpg" alt="상세 클릭시 닫힘" title="클릭시 창이 닫힙니다.">
+        </div>
+    </div>
+    <div class="container" id="container02">
+        <div class="modal">
+            <img class="close" src="images/img_02.jpg" alt="상세 클릭시 닫힘" title="클릭시 창이 닫힙니다.">
+        </div>
+    </div>
+    <div class="container" id="container03">
+        <div class="modal">
+            <img class="close" src="images/img_03.jpg" alt="상세 클릭시 닫힘" title="클릭시 창이 닫힙니다.">
+        </div>
+    </div>
+    <div class="container" id="container04">
+        <div class="modal">
+            <img class="close" src="images/img_04.jpg" alt="상세 클릭시 닫힘" title="클릭시 창이 닫힙니다.">
+        </div>
+    </div>
+
+</body>
