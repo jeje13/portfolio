@@ -1,0 +1,116 @@
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+
+			
+			var menu_offset = $('.get_event_menu').offset();
+
+			$(window).scroll(function() {
+
+				if ($(document).scrollTop() > menu_offset.top) {
+
+					$('.get_event_menu').addClass('gets_event_menu-fixed');
+
+				}else {
+
+					$('.get_event_menu').removeClass('gets_event_menu-fixed');
+
+				}
+
+			});
+
+		});
+
+	</script>
+		
+	<style>
+		.xans-board-read .content img {padding: 0px !important;margin: 0 !important;}
+		.detail{max-width: none !important;}
+		.main_event{margin: 0 auto;}
+
+		#event_body {margin: 0 auto; padding: 0px; text-align: center ; width: 1000px;}
+		div.get_event_menu {margin: 0 auto; width: 1000px ;height: 71px	;  background: url('https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_03.png') no-repeat center / contain ;
+		}
+		
+
+		div.get_event_menu ul { width: 100%;  list-style: none; padding: 0!important;margin: 0!important; height: 100%;}
+
+		div.get_event_menu ul li{ display: inline !important ;height: 100%;}
+
+		div.get_event_menu ul li a{text-decoration: none;display: inline-block !important ;height: 100%;}
+
+		div.gets_main-container{ text-align: center;padding: 0px !important;}
+		div.gets_main-container img{padding: 0;}
+
+		.gets_event_menu-fixed { position: fixed; top: 40px; margin: 0 auto;left: 0; right: 0;height: 100%;} 
+		@media (max-width:960px){
+			#event_body{width: 100%;}
+			div.get_event_menu {width: 100%; height: 3.4%; top: 62px;background: url('https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_03.png') no-repeat center / cover ;}
+			div.get_event_menu ul li a{height: 17px;}
+		}
+
+	</style>
+	<div class="main_event">
+		<div id = "event_body">
+
+			<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_01.jpg" alt="01" id="fb_link_top">
+			<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_02.jpg" alt="02" id="get_event_home">
+
+			<div class="get_event_menu" style="z-index:  999999;">
+
+			<ul style="list-style: none;">
+				<li><a style="width: 5.2%; height: 100%;" href="#"></a></li>
+				<li><a style="width: 16.6%;" href="#get_event_home"></a></li>
+				<li><a style="width: 17.4%;" href="#get_event_01"></a></li>
+				<li><a style="width: 21%;" href="#get_event_02"></a></li>
+				<li><a style="width: 15.6%;" href="#get_event_03"></a></li>
+				<li><a style="width: 18.2%;" href="#get_event_04"></a></li>
+				<li><a style="width: 6%;" href="#"></a></li>
+
+			</ul>
+
+			</div>	
+
+			<div class="gets_main-container" style="z-index:  1;text-align: center;">
+				<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_04.jpg" alt="04" >
+				<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_05.jpg" alt="05" id="get_event_01">
+				<a href="http://m.getscare.co.kr/product/%EA%B2%9F%EC%B8%A0%ED%94%84%EB%A1%9C-%ED%83%88%EB%AA%A8%EC%83%B4%ED%91%B8/13/category/1/display/3/">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_05_02.jpg" alt="05_2" >
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_06.jpg" alt="06" id="get_event_02"></a>
+				<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_07.jpg" alt="07" >
+				
+				<a href="http://m.getscare.co.kr/product/%EA%B2%9F%EC%B8%A0%ED%94%84%EB%A1%9C-%ED%8A%B8%EB%A6%AC%ED%8A%B8%EB%A8%BC%ED%8A%B8/32/category/1/display/3/">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_08.jpg" alt="08">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_09.jpg" alt="09" id="get_event_03">
+				</a>
+					
+				<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_10.jpg" alt="10" >
+				<a href="http://m.getscare.co.kr/product/%EA%B2%9F%EC%B8%A0%EA%B7%B8%EB%9E%A8-%EC%98%81%EC%96%91%EC%A0%9C/14/category/1/display/3/">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_11.jpg" alt="11">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_12.jpg" alt="12" id="get_event_04">
+				</a>
+				<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_13.jpg" alt="13">
+				<a href="http://m.getscare.co.kr/product/%EA%B2%9F%EC%B8%A0%EB%AA%A8%EC%96%B4-%EB%A7%A5%EC%A3%BC%ED%9A%A8%EB%AA%A8/31/category/1/display/3/">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_14.jpg" alt="14">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_15.jpg" alt="15">
+				</a>
+				
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_16.jpg" alt="16">
+					<a href="http://m.getscare.co.kr/board/p_review/list.html?board_no=4">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_17.jpg" alt="17">
+				</a>		
+				<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_18.jpg" alt="18">
+				<a href="http://m.getscare.co.kr/member/login.html?returnUrl=/myshop/index.html&toMoveLoginCheckModule#enp_mbris#enp_bounce">
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_19.jpg" alt="19">	
+					<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_20.jpg" alt="20">
+				</a>
+				<img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_21.jpg" alt="21">
+				<a href="http://m.getscare.co.kr/category/shop/23/#enp_mbris"><img src="https://wlifencare.cafe24.com/web/upload/gets_event/img/gets_event_22.jpg" alt="22"></a>
+				
+
+
+			</div>
+		</div>
+	</div>
